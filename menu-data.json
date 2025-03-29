@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "title": "Головна",
+      "link": "#home",
+      "active": true,
+      "icon": "fa-home"
+    },
+    {
+      "title": "Послуги",
+      "link": "#services",
+      "icon": "fa-tools",
+      "submenu": [
+        {
+          "title": "Веб-розробка",
+          "link": "#services",
+          "submenu": [
+            {
+              "title": "HTML / CSS",
+              "link": "#services"
+            },
+            {
+              "title": "JavaScript",
+              "link": "#services"
+            },
+            {
+              "title": "CMS",
+              "link": "#services"
+            }
+          ]
+        },
+        {
+          "title": "UI/UX Дизайн",
+          "link": "#services"
+        },
+        {
+          "title": "Мобільна розробка",
+          "link": "#services"
+        },
+        {
+          "title": "SEO Оптимізація",
+          "link": "#services"
+        }
+      ]
+    },
+    {
+      "title": "Портфоліо",
+      "link": "#portfolio",
+      "icon": "fa-briefcase",
+      "submenu": [
+        {
+          "title": "Веб-сайти",
+          "link": "#portfolio"
+        },
+        {
+          "title": "Мобільні додатки",
+          "link": "#portfolio"
+        },
+        {
+          "title": "Дизайн-проекти",
+          "link": "#portfolio"
+        }
+      ]
+    },
+    {
+      "title": "Блог",
+      "link": "#blog",
+      "icon": "fa-blog"
+    },
+    {
+      "title": "Контакти",
+      "link": "#contacts",
+      "icon": "fa-envelope"
+    }
+  ]
+}

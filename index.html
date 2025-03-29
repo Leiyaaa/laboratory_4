@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Studio - Професійна веб-розробка</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Професійна веб-студія з розробки сайтів, мобільних додатків та UI/UX дизайну. Створюємо сучасні цифрові рішення для вашого бізнесу.">
+    <meta name="keywords" content="веб-розробка, мобільна розробка, UI/UX дизайн, веб-студія, розробка сайтів, дизайн сайтів">
+    <meta name="author" content="Web Studio">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Web Studio - Професійна веб-розробка">
+    <meta property="og:description" content="Створюємо сучасні та інноваційні веб-сайти та мобільні додатки для вашого бізнесу.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://webstudio.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/code.svg" type="image/svg+xml">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="animations.css">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+</head>
+<body>
+    <!-- Додаємо кнопку "Пропустити до контенту" для доступності -->
+    <a href="#main-content" class="skip-to-content">Пропустити до контенту</a>
+    
+    <nav class="main-menu">
+        <div class="menu-container">
+            <a href="#home" class="logo">Web<span>Studio</span></a>
+            
+            <button class="burger-menu" aria-label="Меню">
+                <span></span>
+            </button>
+            
+            <ul id="menuContainer" class="menu-list">
+                <!-- Menu items will be added dynamically -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- All sections -->
+    <div id="main-content">
+        <!-- Home section -->
+        <section id="home" class="content-section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Створюємо майбутнє в цифровому світі</h1>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn primary-btn">Наші послуги</a>
+                        <a href="#contacts" class="btn secondary-btn">Зв'язатися з нами</a>
+                    </div>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <a href="#features"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>
+            
+            <!-- Features -->
+            <div id="features" class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Сучасні технології</h3>
+                    <p>Використовуємо найновіші технології та фреймворки</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Адаптивний дизайн</h3>
+                    <p>Ваш сайт буде чудово виглядати на всіх пристроях</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Швидка розробка</h3>
+                    <p>Оптимальні терміни та висока якість виконання</p>
+                </div>
+            </div>
+
+            <!-- Статистика -->
+            <div class="stats-section">
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Реалізованих проектів</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Задоволених клієнтів</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Років досвіду</span>
+                </div>
+            </div>
+
+            <!-- Технології -->
+            <div class="technologies-section">
+                <h2>Технології, з якими ми працюємо</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section id="services" class="content-section">
+            <h1>Наші послуги</h1>
+            
+            <!-- Додаємо ARIA-атрибути для кращої доступності -->
+            <div class="service-tabs" role="tablist" aria-label="Категорії послуг">
+                <button class="service-tab active" data-filter="all" role="tab" aria-selected="true">Всі послуги</button>
+                <button class="service-tab" data-filter="web" role="tab" aria-selected="false">Веб-розробка</button>
+                <button class="service-tab" data-filter="design" role="tab" aria-selected="false">UI/UX Дизайн</button>
+                <button class="service-tab" data-filter="mobile" role="tab" aria-selected="false">Мобільна розробка</button>
+                <button class="service-tab" data-filter="seo" role="tab" aria-selected="false">SEO</button>
+            </div>
+            
+            <div class="services-grid" role="tabpanel">
+                <!-- Послуга: Веб-розробка -->
+                <div class="service-card" data-service="web">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Веб-розробка">
+                    <h3>Веб-розробка</h3>
+                    <p>Створення сучасних та responsive веб-сайтів з використанням найновіших технологій.</p>
+                    <ul class="service-features">
+                        <li>Адаптивний дизайн</li>
+                        <li>SEO оптимізація</li>
+                        <li>Швидке завантаження</li>
+                    </ul>
+                    <a href="#service-details" class="learn-more" data-service="web-development">Дізнатися більше</a>
+                </div>
+                
+                <!-- Послуга: UI/UX Дизайн -->
+                <div class="service-card" data-service="design">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="UI/UX Дизайн">
+                    <h3>UI/UX Дизайн</h3>
+                    <p>Розробка інтуїтивних інтерфейсів та привабливого дизайну.</p>
+                    <ul class="service-features">
+                        <li>Користувацькі дослідження</li>
+                        <li>Прототипування</li>
+                        <li>Тестування юзабіліті</li>
+                    </ul>
+                    <a href="#service-details" class="learn-more" data-service="design">Дізнатися більше</a>
+                </div>
+                
+                <!-- Послуга: Мобільна розробка -->
+                <div class="service-card" data-service="mobile">
+                    <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Мобільна розробка">
+                    <h3>Мобільна розробка</h3>
+                    <p>Створення нативних та крос-платформних мобільних додатків.</p>
+                    <ul class="service-features">
+                        <li>iOS та Android</li>
+                        <li>React Native / Flutter</li>
+                        <li>Інтеграція з API</li>
+                    </ul>
+                    <a href="#service-details" class="learn-more" data-service="mobile">Дізнатися більше</a>
+                </div>
+                
+                <!-- Нова послуга: SEO оптимізація -->
+                <div class="service-card" data-service="seo">
+                    <img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SEO оптимізація">
+                    <h3>SEO оптимізація</h3>
+                    <p>Покращення видимості вашого сайту в пошукових системах.</p>
+                    <ul class="service-features">
+                        <li>Аналіз ключових слів</li>
+                        <li>Технічна оптимізація</li>
+                        <li>Контент стратегія</li>
+                    </ul>
+                    <a href="#service-details" class="learn-more" data-service="seo">Дізнатися більше</a>
+                </div>
+            </div>
+            
+            <!-- Детальний опис послуг з ARIA-атрибутами -->
+            <div id="service-details" class="service-details-container" aria-live="polite"></div>
+        </section>
+
+        <!-- Portfolio section -->
+        <section id="portfolio" class="content-section">
+            <h1>Портфоліо</h1>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Корпоративний сайт">
+                    <h3>Корпоративний сайт</h3>
+                    <p>Сучасний адаптивний дизайн для компанії "ЕкоБуд"</p>
+                    <a href="#portfolio-modal" class="view-project" data-project="corporate">Переглянути проект</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Інтернет-магазин">
+                    <h3>Інтернет-магазин</h3>
+                    <p>Зручний каталог товарів та система замовлень для "FashionTrend"</p>
+                    <a href="#portfolio-modal" class="view-project" data-project="ecommerce">Переглянути проект</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Мобільний додаток">
+                    <h3>Мобільний додаток</h3>
+                    <p>Інноваційне рішення для бізнесу "FitTracker"</p>
+                    <a href="#portfolio-modal" class="view-project" data-project="mobile-app">Переглянути проект</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Блог платформа">
+                    <h3>Блог платформа</h3>
+                    <p>Сучасний дизайн та зручний редактор контенту</p>
+                    <a href="#portfolio-modal" class="view-project" data-project="blog-platform">Переглянути проект</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog section -->
+        <section id="blog" class="content-section">
+            <h1>Блог</h1>
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Веб-тренди">
+                    <h3>Тренди веб-розробки 2024</h3>
+                    <p>Огляд найактуальніших технологій та підходів у веб-розробці.</p>
+                    <a href="#blog-modal" class="read-more" data-post="web-trends">Читати далі</a>
+                </article>
+                <article class="blog-post">
+                    <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="UI/UX поради">
+                    <h3>5 порад з UI/UX дизайну</h3>
+                    <p>Як створити інтерфейс, який полюблять користувачі.</p>
+                    <a href="#blog-modal" class="read-more" data-post="ui-ux-tips">Читати далі</a>
+                </article>
+                <article class="blog-post">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Мобільна розробка">
+                    <h3>Нативна vs Кросплатформна розробка</h3>
+                    <p>Порівняльний аналіз підходів до створення мобільних додатків.</p>
+                    <a href="#blog-modal" class="read-more" data-post="mobile-dev">Читати далі</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contacts section -->
+        <section id="contacts" class="content-section">
+            <h1>Контакти</h1>
+            <div class="contacts-container">
+                <div class="contact-info">
+                    <h3>Зв'яжіться з нами</h3>
+                    <p><i class="fas fa-envelope"></i> info@webstudio.com</p>
+                    <p><i class="fas fa-phone"></i> +380 44 123 45 67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> м. Київ, вул. Хрещатик, 1</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Ваше ім'я" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+                    <button type="submit" class="submit-btn">Надіслати</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Модальні вікна для портфоліо та блогу -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="portfolio-details"></div>
+        </div>
+    </div>
+
+    <div id="blog-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="blog-details"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Web Studio</h3>
+                <p>Професійна веб-розробка для вашого бізнесу.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Навігація</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#portfolio">Портфоліо</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Контакти</h3>
+                <p><i class="fas fa-envelope"></i> info@webstudio.com</p>
+                <p><i class="fas fa-phone"></i> +380 44 123 45 67</p>
+                <p><i class="fas fa-map-marker-alt"></i> м. Київ, вул. Хрещатик, 1</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Web Studio. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="site-config.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
